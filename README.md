@@ -8,9 +8,9 @@
 3. Functional annotation of the hits (differentially expressed genes or modules containing highly correlated genes) was performed using the hypergeometric test.
 
 _**NOTE**_
-1. The first three steps of the analysis generate the count table using the in-house pipeline. The relevant scripts are in the folder, "S1to3_Run_Pipeline_CAGEseq". 
+1. The first three steps of the analysis generate the count table using the in-house pipeline. The relevant scripts are in the folder, ["S1to3_Run_Pipeline_CAGEseq"](https://github.com/Tenzin-Nyima-1/RiMod-FTD/tree/master/S1to3_Run_Pipeline_CAGEseq). 
 
-1. Then the annotation of the count table is performed using the scripts in the folder, "S4to5_Annotate_CounTable_CAGEseq".
+1. Then the annotation of the count table is performed using the scripts in the folder, ["S4to5_Annotate_CounTable_CAGEseq"](https://github.com/Tenzin-Nyima-1/RiMod-FTD/tree/master/S4to5_Annotate_CounTable_CAGEseq).
 
 
 **Used the following R packages:**
