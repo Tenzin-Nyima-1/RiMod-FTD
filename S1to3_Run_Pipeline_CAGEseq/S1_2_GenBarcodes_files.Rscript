@@ -1,0 +1,57 @@
+# Date: 21 March 2018;
+# Project: RiMOD-FTD;
+# Data: CAGEseq transcriptomic data;
+# Aim: extract barcode info corresponding to each sample present in a pool;
+# NOTE: sample script for extracting barcode info;
+# Workflow;
+# Step 1-2: generate barcodes file per sample in a pool using this script: "S1_1_GenBarcodes_files.Rscript";
+
+
+# install.packages(c("stringr", "openxlsx"));
+
+library(stringr)
+library(openxlsx)
+
+
+# #################################################;
+# I. Read the Google sheet containing the data info;
+# #################################################;
+
+# 1. read the excel file;
+FTD_Brain <- read.xlsx("./Sample_Info/FTD_Brain_14July2017.xlsx", sheet=4, colNames = TRUE)
+dim(FTD_Brain)
+
+# 2. read barcode annotation for each linker;
+CAGE_BarcodeInf <- read.table(col.names = c("Linkers", "Barcodes"), text = "1 AGA
+2 CTT
+3 GAT
+4 ACA
+5 ACT
+6 ACG
+7 ATC
+8 ATG
+9 AGC
+10 AGT", stringsAsFactors = FALSE)
+dim(CAGE_BarcodeInf)
+# [1] 10  2;
+
+# 4. assign anew barcode column and replace the corresponding values;
+FTD_Brain$Barcode <- NA
+for(i in seq(nrow(FTD_Brain)))
+  FTD_Brain$Barcode[i] <- CAGE_BarcodeInf$Barcodes[which(FTD_Brain$Linkers[i] == CAGE_BarcodeInf$Linkers)]
+
+# 5. arrange the cols as per conv;
+FTD_Brain_new <- FTD_Brain[,c("Name.of.Flow-cell", "Sample", "Disease.code", "RIN", "Linkers", "Barcode", "Pool", "Made", "Observations", "Sent")]
+colnames(FTD_Brain_new)[1] <- "Nm_Flow_Cell"
+dim(FTD_Brain_new)
+  
+# 6. each runs should be only for the selected samples, subset the info correspondingly;
+FTD_Brain_newSel <- FTD_Brain_new[!is.na(FTD_Brain_new$Disease.code),]
+dim(FTD_Brain_newSel)
+
+# 7. have to run the pipeline for the sel pools only: have a look at the pools;
+unique(FTD_Brain_newSel$Pool)
+
+# 8. save the barcode and sample info;
+write.table(FTD_Brain_newSel[,c("Sample", "Barcode")], "./barcodes.txt", quote = FALSE, sep = "\t", row.names = FALSE, col.names = FALSE)
+# End ___________________________________________________________________________________________________________________________________;
