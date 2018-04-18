@@ -12,6 +12,7 @@ _**NOTE**_
 
 1. Then the annotation of the count table is performed using the scripts in the folder, ["S4to5_Annotate_CounTable_CAGEseq"](https://github.com/Tenzin-Nyima-1/RiMod-FTD/tree/master/S4to5_Annotate_CounTable_CAGEseq).
 
+1. The scripts relevant to the differential gene expression (DGE) analysis and the pre-DGE data preparation/crosscheck is here: [" S6to7_preDE_DGEanaly_CAGEseq"](https://github.com/Tenzin-Nyima-1/RiMod-FTD/tree/master/S6to7_preDE_DGEanaly_CAGEseq).
 
 **Used the following R packages:**
 * [base](https://cran.r-project.org/bin/windows/base/old/3.2.3/)
