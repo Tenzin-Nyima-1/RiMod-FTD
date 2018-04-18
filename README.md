@@ -17,13 +17,12 @@ _**NOTE**_
 **Used the following R packages:**
 * [base](https://cran.r-project.org/bin/windows/base/old/3.2.3/)
 * [CAGEr](http://bioconductor.org/packages/release/bioc/html/CAGEr.html)
-* [stringr](https://cran.r-project.org/web/packages/stringr/index.html)
-* [stringi](https://cran.r-project.org/web/packages/stringi/index.html)
-* [openxlsx](https://cran.r-project.org/web/packages/openxlsx/index.html)
-* [xlsx](https://cran.r-project.org/web/packages/xlsx/index.html)
-* [muStat](https://cran.r-project.org/web/packages/muStat/index.html)
-* [GenomicFeatures](http://bioconductor.org/packages/release/bioc/html/GenomicFeatures.html)
-* [org.Hs.eg.db](http://bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html)
+* [stringr](https://cran.r-project.org/web/packages/stringr/index.html); [stringi](https://cran.r-project.org/web/packages/stringi/index.html)
+* [openxlsx](https://cran.r-project.org/web/packages/openxlsx/index.html); [xlsx](https://cran.r-project.org/web/packages/xlsx/index.html); [readxl](https://cran.r-project.org/web/packages/readxl/index.html)
+* [GenomicFeatures](http://bioconductor.org/packages/release/bioc/html/GenomicFeatures.html); [org.Hs.eg.db](http://bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html); [BSgenome.Hsapiens.UCSC.hg38](http://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg38.html); [TxDb.Hsapiens.UCSC.hg38.knownGene](http://bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg38.knownGene.html); [AnnotationDbi](http://bioconductor.org/packages/release/bioc/html/AnnotationDbi.html)
 * [ChIPseeker](http://bioconductor.org/packages/release/bioc/html/ChIPseeker.html)
+* [S4Vectors](https://bioconductor.org/packages/release/bioc/html/S4Vectors.html); [Hmisc](https://cran.r-project.org/web/packages/Hmisc/index.html); [reshape2](https://cran.r-project.org/web/packages/reshape2/index.html); [muStat](https://cran.r-project.org/web/packages/muStat/index.html)
+* [edgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html); [sva](http://bioconductor.org/packages/release/bioc/html/sva.html)
+* [RColorBrewer](https://cran.r-project.org/web/packages/RColorBrewer/index.html); [pheatmap](https://cran.r-project.org/web/packages/pheatmap/index.html); [plot3D](https://cran.r-project.org/web/packages/plot3D/index.html); [plotrix](https://cran.r-project.org/web/packages/plotrix/index.html)
 
 _(Note: this repository is not complete yet. Additional scripts relevant to the downstream analysis will be included shortly into this repository)_
