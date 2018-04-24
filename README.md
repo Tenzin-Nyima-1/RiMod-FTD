@@ -14,7 +14,8 @@ _**NOTE**_
 
 1. The scripts relevant to the differential gene expression (DGE) analysis and the pre-DGE data preparation/crosscheck is here: [" S6to7_preDE_DGEanaly_CAGEseq"](https://github.com/Tenzin-Nyima-1/RiMod-FTD/tree/master/S6to7_preDE_DGEanaly_CAGEseq).
 
-**Used the following R packages:**
+1. The functional annotation (of the significant DEG) using hypergeometric test was carried using the script at ["S8_DEG_HypGeomtest_CAGEseq"](https://github.com/Tenzin-Nyima-1/RiMod-FTD/tree/master/S8_DEG_HypGeomtest_CAGEseq).
+
 **Used the following R packages:**
 * [base](https://cran.r-project.org/bin/windows/base/old/3.2.3/)
 * [CAGEr](http://bioconductor.org/packages/release/bioc/html/CAGEr.html)
