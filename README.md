@@ -16,7 +16,7 @@ _**NOTE**_
 
 1. The functional annotation (of the significant DEG) using hypergeometric test was carried using the script at ["S8_DEG_HypGeomtest_CAGEseq"](https://github.com/Tenzin-Nyima-1/RiMod-FTD/tree/master/S8_DEG_HypGeomtest_CAGEseq).
 
-1. Finally, Weighted Gene Coexpression Network Analysis (WGCNA) was carried to find out coexpression modules and intramodular hub genes. Breifly, the stepwise scripts are organized into the following steps: S1-Data preparation and cleaning; S2-Network construction; S3-Correlation(ME, trait) and GS vs MM; S4: GS vs Intramodular-connectivity; S5-more network exploration; and, S6-Functional annotation of the interesting modules. The relevant scripts are at ["WGCNA_StepwiseScripts_CAGEseq"](https://github.com/Tenzin-Nyima-1/RiMod-FTD/tree/master/WGCNA_StepwiseScripts_CAGEseq).
+1. Finally, Weighted Gene Coexpression Network Analysis (WGCNA) was performed to find out coexpression modules and intramodular hub genes. Breifly, the stepwise scripts were organized into the following steps: S1-Data preparation and cleaning; S2-Network construction; S3-Correlation(ME, trait) and GS vs MM; S4: GS vs Intramodular-connectivity; S5-more network exploration; and, S6-Functional annotation of the interesting modules. The relevant scripts are at ["WGCNA_StepwiseScripts_CAGEseq"](https://github.com/Tenzin-Nyima-1/RiMod-FTD/tree/master/WGCNA_StepwiseScripts_CAGEseq).
 
 
 **Used the following R packages:**
